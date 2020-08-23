@@ -37,6 +37,7 @@ class PatientDetailsmd(db.Model):
         self.cityid=cityid
  
 class PatientDetailschema(ma.Schema):
+    #schema for converting toserializable objec
     name = fields.String( primary_key=True)
     lastname = fields.String()
     status =fields.String()
