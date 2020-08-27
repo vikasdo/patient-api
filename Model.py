@@ -7,7 +7,7 @@ from flask_sqlalchemy import SQLAlchemy
 ma = Marshmallow()
 db = SQLAlchemy()
 
-
+#The main class for Db
 class PatientDetailsmd(db.Model):
     
 
