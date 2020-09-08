@@ -13,7 +13,7 @@ class PatientDetails(Resource):
 
     def post(self):
         json_data = request.get_json(force=True)
-
+        print(json_data)
         # name=request.json['name']
         # id=request.json['id']
 
@@ -25,4 +25,4 @@ class PatientDetails(Resource):
 
         # result = patient_schema.dump(details).data
 
-        return { "status": 'success', 'data': 'ok' }, 201
+        return { "status": 'success', 'data': 'ok' }, 200
